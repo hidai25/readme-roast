@@ -18,6 +18,10 @@ Your README is your landing page. If visitors can't understand what your project
 
 We roasted our own README first. It scored **47/100**. We fixed it. You're reading the result.
 
+<p align="center">
+  <img src="assets/demo.gif" alt="README Roast demo — audit, history, and star killers" width="700">
+</p>
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
