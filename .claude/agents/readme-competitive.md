@@ -23,7 +23,7 @@ You will receive:
 ### Step 1: Load Benchmark Data
 
 1. Read the benchmark file for the detected category from `benchmarks/{category}.json`
-2. If the category file doesn't exist, use `benchmarks/cli-tools.json` as default
+2. If the category file doesn't exist, use `benchmarks/library.json` as default
 3. Extract: individual repo scores, category averages, pattern frequency data
 
 ### Step 2: Extract Patterns from Target README
@@ -48,20 +48,40 @@ Scan the README and record:
 | `has_contributing` | Contributing section or CONTRIBUTING.md link |
 | `has_license_badge` | License badge present |
 | `has_community_link` | Discord, Slack, Discussions, or Matrix link |
+| `has_star_cta` | Explicit ask to star the repo ("Star if helpful", ⭐ with ask, "Give it a star") |
 
-### Step 3: Compare Against Benchmarks
+### Step 3: Apply Pattern Intelligence
+
+Before identifying gaps, apply these rules:
+
+**GIF subsumes screenshot:** If the target repo has `has_gif = true`, do NOT flag `has_screenshot` as a gap. A GIF is strictly better — flagging both as separate gaps is misleading and creates noise.
+
+**Category-aware visual expectations:**
+| Category | Primary visual | Can skip |
+|----------|---------------|----------|
+| CLI Tools | Terminal GIF/recording | UI screenshots |
+| AI/ML | Output GIF / notebook | UI screenshots |
+| Web Frameworks | UI screenshot / live demo | Terminal recording |
+| Testing | Terminal output / GIF | Architecture diagrams |
+| DevOps | Architecture diagram / GIF | UI screenshots |
+| Library | Code examples (text is fine) | GIF, screenshots (nice-to-have, not required) |
+
+If the target repo has the **primary visual** for its category, don't flag missing secondary visuals as high-priority gaps.
+
+### Step 4: Compare Against Benchmarks
 
 For each pattern:
 1. Compare target value against category percentage / average
 2. If target is missing a pattern that 50%+ of top repos have → flag as high-priority gap
 3. If target is missing a pattern that 30-49% have → flag as medium-priority gap
 4. If target has a pattern that < 30% of top repos have → flag as a strength (ahead of curve)
+5. Skip patterns that are subsumed (GIF covers screenshot) or low-priority for the category
 
 For numeric metrics (install_steps, total_lines, badges_count):
 1. Compare against category average
 2. If significantly worse (> 1 standard deviation) → flag
 
-### Step 4: Rank Gaps by Impact
+### Step 5: Rank Gaps by Impact
 
 ```
 Gap_Impact = pattern_frequency_pct * category_weight_for_that_dimension
@@ -75,7 +95,7 @@ Where category weights are:
 - Structure patterns → 0.15
 - Differentiation patterns → 0.10
 
-### Step 5: Generate Competitive Report
+### Step 6: Generate Competitive Report
 
 ## Output Format
 

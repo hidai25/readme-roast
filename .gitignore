@@ -19,6 +19,9 @@ venv/
 *.swo
 *~
 
+# Audit history (local state — regenerated per repo by /readme-audit)
+.readme-roast/
+
 # Reports (generated output — don't commit unless intentional)
 README-AUDIT-REPORT.md
 README-ROAST-REPORT.md

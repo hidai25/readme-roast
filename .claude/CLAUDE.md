@@ -26,6 +26,8 @@ README audit tool for GitHub star conversion. Built as Claude Code skills.
 | `/readme-compare` | Before/after delta tracking |
 | `/readme-rewrite` | Generate improved README sections |
 | `/readme-star-killers` | Show top issues killing star conversion |
+| `/readme-history` | Audit timeline with score progression |
+| `/readme-history stars` | Score-to-star velocity correlation |
 
 ## Scoring Formula
 
@@ -45,7 +47,9 @@ README_Score = (Hero * 0.25) + (Visuals * 0.20) + (Install * 0.15) + (Trust * 0.
 
 ## Conventions
 
-- All audit output goes to markdown files in the working directory
+- Audit reports go to markdown files in the working directory (`README-AUDIT-REPORT.md`, etc.)
+- Audit history auto-saves to `.readme-roast/` as JSON (snapshots + `history.json`)
 - Benchmark data lives in `benchmarks/*.json`
 - PDF generation requires ReportLab: `pip install reportlab`
 - GitHub API access via `gh` CLI for repo metadata
+- When a repo has a GIF, don't flag missing screenshots as a gap (GIF subsumes screenshot for CLI/terminal tools)

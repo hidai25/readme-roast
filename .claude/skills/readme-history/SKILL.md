@@ -44,55 +44,30 @@ story.
 
 ### history.json Schema
 
+The history index is intentionally lightweight — full audit data lives in
+snapshot files. Each audit entry has just enough to render the timeline.
+
 ```json
 {
   "repo": "eval-view",
   "url": "https://github.com/hidai25/eval-view",
   "category": "testing",
-  "created": "2026-03-30",
   "audits": [
     {
       "id": "2026-03-30T04-46",
       "date": "2026-03-30",
-      "score": 77,
-      "rating": "Good",
+      "readme_hash": "a3f2b1c",
       "stars": 77,
-      "scores": {
-        "hero": 82,
-        "visuals": 78,
-        "install": 88,
-        "trust": 64,
-        "structure": 68,
-        "differentiation": 76
-      },
-      "readme_lines": 450,
-      "readme_hash": "a3f2b1c...",
-      "notes": null,
-      "changes_since_last": null
+      "score": 77,
+      "rating": "Good"
     },
     {
       "id": "2026-04-05T12-30",
       "date": "2026-04-05",
-      "score": 85,
-      "rating": "Excellent",
+      "readme_hash": "d4e5f6a",
       "stars": 92,
-      "scores": {
-        "hero": 88,
-        "visuals": 85,
-        "install": 90,
-        "trust": 78,
-        "structure": 80,
-        "differentiation": 80
-      },
-      "readme_lines": 380,
-      "readme_hash": "d4e5f6a...",
-      "notes": "Post-rewrite based on audit #1 findings",
-      "changes_since_last": [
-        "Added GIF demo above the fold",
-        "Added TOC",
-        "Added 'Used by' section with 3 logos",
-        "Shortened from 450 to 380 lines"
-      ]
+      "score": 85,
+      "rating": "Excellent"
     }
   ]
 }
@@ -107,32 +82,19 @@ to reconstruct the full report or generate comparisons:
 {
   "id": "2026-03-30T04-46",
   "date": "2026-03-30",
-  "repo": "eval-view",
-  "url": "https://github.com/hidai25/eval-view",
-  "category": "testing",
+  "readme_hash": "a3f2b1c",
   "stars": 77,
-  "score": 77,
-  "rating": "Good",
+  "category": "testing",
   "scores": {
     "hero": 82,
     "visuals": 78,
     "install": 88,
     "trust": 64,
     "structure": 68,
-    "differentiation": 76
+    "differentiation": 76,
+    "overall": 77
   },
-  "category_averages": {
-    "hero": 83,
-    "visuals": 68,
-    "install": 84,
-    "trust": 84,
-    "structure": 80,
-    "differentiation": 76
-  },
-  "star_killers": [
-    {"category": "Trust Signals", "gap": 20, "fix": "Add used-by section"},
-    {"category": "Structure", "gap": 12, "fix": "Add TOC, reduce length"}
-  ],
+  "rating": "Good",
   "patterns": {
     "has_gif": true,
     "has_screenshot": true,
@@ -142,14 +104,42 @@ to reconstruct the full report or generate comparisons:
     "install_steps": 3,
     "badges_count": 6,
     "total_lines": 450,
-    "code_blocks": 15
+    "code_blocks": 15,
+    "has_quickstart_output": true,
+    "has_contributing": true,
+    "has_license_badge": true,
+    "has_community_link": false
   },
-  "quick_wins": ["Add TOC", "Add used-by section"],
-  "medium_term": ["Record 15-second GIF demo"],
-  "strategic": ["Build community channel"],
-  "readme_hash": "a3f2b1c...",
-  "notes": null,
-  "changes_since_last": null
+  "star_killers": [
+    {"category": "Trust Signals", "gap": 20, "score": 64, "benchmark_avg": 84, "fix": "Add used-by section"},
+    {"category": "Structure", "gap": 12, "score": 68, "benchmark_avg": 80, "fix": "Add TOC, reduce length"}
+  ],
+  "action_items": [
+    "Add TOC",
+    "Add used-by section",
+    "Record 15-second GIF demo",
+    "Build community channel"
+  ],
+  "previous_audit": null,
+  "delta": null
+}
+```
+
+For subsequent audits, the `previous_audit` field links to the prior snapshot ID,
+and `delta` contains per-category score changes:
+
+```json
+{
+  "previous_audit": "2026-03-30T04-46",
+  "delta": {
+    "overall": 8,
+    "hero": 6,
+    "visuals": 7,
+    "install": 2,
+    "trust": 14,
+    "structure": 12,
+    "differentiation": 4
+  }
 }
 ```
 
