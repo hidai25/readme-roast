@@ -1,11 +1,10 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="readme-roast" width="320">
+  <img src="assets/logo.svg" alt="readme-roast" width="400">
 </p>
 
 <p align="center">
   <a href="https://github.com/hidai25/readme-roast/stargazers"><img src="https://img.shields.io/github/stars/hidai25/readme-roast?style=social" alt="Stars"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
-  <a href="https://github.com/hidai25/readme-roast/actions"><img src="https://github.com/hidai25/readme-roast/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/hidai25/readme-roast/issues"><img src="https://img.shields.io/github/issues/hidai25/readme-roast" alt="Issues"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
   <a href="https://github.com/hidai25/readme-roast/discussions"><img src="https://img.shields.io/badge/Discussions-community-blue" alt="Discussions"></a>
