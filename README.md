@@ -1,15 +1,17 @@
 <p align="center">
   <h1 align="center">README Roast</h1>
   <p align="center">
-    <strong>Roast your README against 90 top-starred repos. Find what's killing your stars.</strong>
+    <strong>Roast your README against 116 top-starred repos (4.8M combined stars). Find what's killing your stars.</strong>
   </p>
 </p>
 
 <p align="center">
   <a href="https://github.com/hidai25/readme-roast/stargazers"><img src="https://img.shields.io/github/stars/hidai25/readme-roast?style=social" alt="Stars"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/hidai25/readme-roast/actions"><img src="https://github.com/hidai25/readme-roast/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/hidai25/readme-roast/issues"><img src="https://img.shields.io/github/issues/hidai25/readme-roast" alt="Issues"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://github.com/hidai25/readme-roast/discussions"><img src="https://img.shields.io/badge/Discussions-community-blue" alt="Discussions"></a>
 </p>
 
 ---
@@ -36,7 +38,7 @@ We roasted our own README first. It scored **47/100**. We fixed it. You're readi
 
 ## Prerequisites
 
-**Requires [Claude Code](https://claude.ai/code)** — README Roast runs as Claude Code skills. Install Claude Code first, then:
+**Requires [Claude Code](https://claude.ai/code)** (free tier available) — README Roast runs as Claude Code skills. [Install Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview), then:
 
 ```bash
 git clone https://github.com/hidai25/readme-roast
