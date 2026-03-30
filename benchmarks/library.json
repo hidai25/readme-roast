@@ -1,0 +1,139 @@
+{
+  "category": "library",
+  "last_updated": "2026-03-30",
+  "repos_analyzed": 15,
+  "repos": [
+    {
+      "name": "axios",
+      "url": "https://github.com/axios/axios",
+      "stars": 106000,
+      "scores": { "hero": 85, "visuals": 45, "install": 92, "trust": 92, "structure": 85, "differentiation": 72, "overall": 80 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": false, "hero_words": 12, "total_lines": 500, "has_toc": true, "badges_count": 6, "has_quickstart_output": true, "code_blocks": 20, "has_contributing": true, "has_license_badge": true, "has_community_link": false }
+    },
+    {
+      "name": "lodash",
+      "url": "https://github.com/lodash/lodash",
+      "stars": 60000,
+      "scores": { "hero": 75, "visuals": 30, "install": 90, "trust": 90, "structure": 70, "differentiation": 60, "overall": 72 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": true, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": false, "hero_words": 10, "total_lines": 100, "has_toc": false, "badges_count": 4, "has_quickstart_output": true, "code_blocks": 5, "has_contributing": true, "has_license_badge": true, "has_community_link": false }
+    },
+    {
+      "name": "zod",
+      "url": "https://github.com/colinhacks/zod",
+      "stars": 35000,
+      "scores": { "hero": 88, "visuals": 50, "install": 88, "trust": 82, "structure": 85, "differentiation": 80, "overall": 80 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": true, "has_comparison_section": true, "install_steps": 1, "has_used_by": true, "hero_words": 15, "total_lines": 600, "has_toc": true, "badges_count": 5, "has_quickstart_output": true, "code_blocks": 25, "has_contributing": true, "has_license_badge": true, "has_community_link": true }
+    },
+    {
+      "name": "pydantic",
+      "url": "https://github.com/pydantic/pydantic",
+      "stars": 22000,
+      "scores": { "hero": 85, "visuals": 50, "install": 90, "trust": 88, "structure": 82, "differentiation": 75, "overall": 80 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": true, "hero_words": 18, "total_lines": 300, "has_toc": true, "badges_count": 8, "has_quickstart_output": true, "code_blocks": 10, "has_contributing": true, "has_license_badge": true, "has_community_link": true }
+    },
+    {
+      "name": "requests",
+      "url": "https://github.com/psf/requests",
+      "stars": 52000,
+      "scores": { "hero": 82, "visuals": 40, "install": 92, "trust": 90, "structure": 78, "differentiation": 68, "overall": 77 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": false, "hero_words": 15, "total_lines": 200, "has_toc": false, "badges_count": 5, "has_quickstart_output": true, "code_blocks": 8, "has_contributing": true, "has_license_badge": true, "has_community_link": false }
+    },
+    {
+      "name": "date-fns",
+      "url": "https://github.com/date-fns/date-fns",
+      "stars": 35000,
+      "scores": { "hero": 82, "visuals": 45, "install": 88, "trust": 82, "structure": 80, "differentiation": 72, "overall": 77 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": true, "has_comparison_table": false, "has_comparison_section": true, "install_steps": 1, "has_used_by": false, "hero_words": 12, "total_lines": 250, "has_toc": true, "badges_count": 5, "has_quickstart_output": true, "code_blocks": 10, "has_contributing": true, "has_license_badge": true, "has_community_link": false }
+    },
+    {
+      "name": "chalk",
+      "url": "https://github.com/chalk/chalk",
+      "stars": 22000,
+      "scores": { "hero": 85, "visuals": 70, "install": 90, "trust": 78, "structure": 82, "differentiation": 70, "overall": 81 },
+      "patterns": { "has_gif": false, "has_screenshot": true, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": false, "hero_words": 10, "total_lines": 300, "has_toc": true, "badges_count": 4, "has_quickstart_output": true, "code_blocks": 12, "has_contributing": true, "has_license_badge": true, "has_community_link": false }
+    },
+    {
+      "name": "click",
+      "url": "https://github.com/pallets/click",
+      "stars": 16000,
+      "scores": { "hero": 80, "visuals": 40, "install": 88, "trust": 85, "structure": 78, "differentiation": 68, "overall": 75 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": false, "hero_words": 20, "total_lines": 200, "has_toc": false, "badges_count": 5, "has_quickstart_output": true, "code_blocks": 6, "has_contributing": true, "has_license_badge": true, "has_community_link": true }
+    },
+    {
+      "name": "tanstack-query",
+      "url": "https://github.com/TanStack/query",
+      "stars": 43000,
+      "scores": { "hero": 88, "visuals": 60, "install": 85, "trust": 88, "structure": 82, "differentiation": 78, "overall": 82 },
+      "patterns": { "has_gif": false, "has_screenshot": true, "has_demo_link": true, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": true, "hero_words": 15, "total_lines": 350, "has_toc": true, "badges_count": 6, "has_quickstart_output": false, "code_blocks": 8, "has_contributing": true, "has_license_badge": true, "has_community_link": true }
+    },
+    {
+      "name": "rich",
+      "url": "https://github.com/Textualize/rich",
+      "stars": 50000,
+      "scores": { "hero": 90, "visuals": 92, "install": 90, "trust": 85, "structure": 85, "differentiation": 75, "overall": 88 },
+      "patterns": { "has_gif": true, "has_screenshot": true, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": false, "hero_words": 12, "total_lines": 400, "has_toc": true, "badges_count": 5, "has_quickstart_output": true, "code_blocks": 15, "has_contributing": true, "has_license_badge": true, "has_community_link": true }
+    },
+    {
+      "name": "faker",
+      "url": "https://github.com/joke2k/faker",
+      "stars": 18000,
+      "scores": { "hero": 82, "visuals": 45, "install": 88, "trust": 80, "structure": 78, "differentiation": 65, "overall": 75 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": false, "hero_words": 15, "total_lines": 350, "has_toc": true, "badges_count": 6, "has_quickstart_output": true, "code_blocks": 12, "has_contributing": true, "has_license_badge": true, "has_community_link": false }
+    },
+    {
+      "name": "dayjs",
+      "url": "https://github.com/iamkun/dayjs",
+      "stars": 47000,
+      "scores": { "hero": 85, "visuals": 50, "install": 90, "trust": 85, "structure": 80, "differentiation": 75, "overall": 79 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": true, "install_steps": 1, "has_used_by": false, "hero_words": 12, "total_lines": 300, "has_toc": true, "badges_count": 7, "has_quickstart_output": true, "code_blocks": 10, "has_contributing": true, "has_license_badge": true, "has_community_link": false }
+    },
+    {
+      "name": "celery",
+      "url": "https://github.com/celery/celery",
+      "stars": 25000,
+      "scores": { "hero": 78, "visuals": 45, "install": 82, "trust": 85, "structure": 78, "differentiation": 68, "overall": 74 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": false, "hero_words": 20, "total_lines": 300, "has_toc": true, "badges_count": 6, "has_quickstart_output": false, "code_blocks": 8, "has_contributing": true, "has_license_badge": true, "has_community_link": true }
+    },
+    {
+      "name": "sqlalchemy",
+      "url": "https://github.com/sqlalchemy/sqlalchemy",
+      "stars": 10000,
+      "scores": { "hero": 78, "visuals": 35, "install": 85, "trust": 88, "structure": 75, "differentiation": 65, "overall": 73 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": false, "hero_words": 22, "total_lines": 250, "has_toc": false, "badges_count": 5, "has_quickstart_output": false, "code_blocks": 6, "has_contributing": true, "has_license_badge": true, "has_community_link": true }
+    },
+    {
+      "name": "bull",
+      "url": "https://github.com/OptimalBits/bull",
+      "stars": 16000,
+      "scores": { "hero": 80, "visuals": 50, "install": 85, "trust": 78, "structure": 78, "differentiation": 70, "overall": 75 },
+      "patterns": { "has_gif": false, "has_screenshot": false, "has_demo_link": false, "has_comparison_table": false, "has_comparison_section": false, "install_steps": 1, "has_used_by": true, "hero_words": 15, "total_lines": 400, "has_toc": true, "badges_count": 4, "has_quickstart_output": true, "code_blocks": 15, "has_contributing": true, "has_license_badge": true, "has_community_link": false }
+    }
+  ],
+  "category_averages": {
+    "hero": 83,
+    "visuals": 50,
+    "install": 88,
+    "trust": 85,
+    "structure": 80,
+    "differentiation": 71,
+    "overall": 78
+  },
+  "patterns_summary": {
+    "pct_with_gif": 7,
+    "pct_with_screenshot": 20,
+    "pct_with_demo_link": 20,
+    "pct_with_comparison": 7,
+    "pct_with_comparison_section": 20,
+    "avg_install_steps": 1.0,
+    "pct_with_used_by": 27,
+    "avg_hero_words": 15,
+    "avg_total_lines": 320,
+    "pct_with_toc": 67,
+    "avg_badges": 5,
+    "pct_with_quickstart_output": 73,
+    "avg_code_blocks": 11,
+    "pct_with_contributing": 100,
+    "pct_with_license_badge": 100,
+    "pct_with_community_link": 47
+  }
+}
