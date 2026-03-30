@@ -73,6 +73,30 @@ Does the visual demonstrate the core value proposition stated in the hero?
 
 ---
 
+## Important Scoring Rules
+
+### GIF Subsumes Screenshot
+If a repo has an animated GIF or video demo, do NOT penalize for missing static screenshots. A GIF is strictly better than a screenshot — it shows everything a screenshot shows plus motion and interaction. When reporting benchmark comparisons, treat `has_gif = true` as satisfying both the GIF and screenshot patterns.
+
+### Category-Aware Visual Expectations
+
+Different categories have different visual needs. Adjust recommendations accordingly:
+
+| Category | Primary Visual Need | Secondary | Low Value |
+|----------|-------------------|-----------|-----------|
+| **CLI Tools** | Terminal recording / GIF | asciinema embed | UI screenshot |
+| **AI/ML** | GIF of output / notebook screenshot | Architecture diagram | UI screenshot |
+| **Web Frameworks** | UI screenshot / live demo link | GIF of dev workflow | Terminal recording |
+| **Testing** | Terminal output screenshot / GIF | CI output screenshot | Architecture diagram |
+| **DevOps** | Architecture diagram / terminal GIF | Dashboard screenshot | UI screenshot |
+| **Library** | Code example output (can be text) | API screenshot | GIF (often unnecessary) |
+
+For **Library** category repos specifically: if the README has clear code examples with output shown, the visual requirement is largely satisfied even without images. Libraries communicate through code, not screenshots.
+
+When making recommendations, suggest the **primary visual need** for the detected category, not generic "add a screenshot."
+
+---
+
 ## Analysis Procedure
 
 ### Step 1: Detect All Visual Elements

@@ -65,7 +65,12 @@ Scan the entire README for visual elements:
 4. **Note position:** Line number, above/below fold (fold = line 25)
 5. **Assess value prop alignment:** Does the best visual demonstrate the core claim?
 
-6. **Score:**
+6. **Apply category-aware rules:**
+   - GIF subsumes screenshot — if GIF present, do not flag missing screenshots
+   - CLI/Testing: terminal GIF is the ideal visual, not UI screenshots
+   - Library: code examples with output can satisfy visual requirement even without images
+
+7. **Score:**
    - Presence & Type (40%): GIF=90+, screenshot=60-75, logo only=20-40, none=0-19
    - Position (30%): Above fold=90+, below fold=50-69, in docs only=0-29
    - Alignment (30%): Proves value prop=90+, shows tool=60-75, unrelated=0-29

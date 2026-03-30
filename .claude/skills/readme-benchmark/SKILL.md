@@ -77,7 +77,25 @@ For each pattern, compare the target against:
 2. **Pattern frequency** — what percentage of top repos have this pattern
 3. **Top 3 repos** — specific examples of repos doing it well
 
-### Step 5: Identify Gaps
+### Step 5: Apply Pattern Intelligence
+
+Before identifying gaps, apply these rules:
+
+**GIF subsumes screenshot:** If the target repo has `has_gif = true`, do NOT flag `has_screenshot` as a gap. A GIF is strictly better — flagging both as separate gaps is misleading and creates noise.
+
+**Category-aware visual expectations:**
+| Category | Primary visual | Can skip |
+|----------|---------------|----------|
+| CLI Tools | Terminal GIF/recording | UI screenshots |
+| AI/ML | Output GIF / notebook | UI screenshots |
+| Web Frameworks | UI screenshot / live demo | Terminal recording |
+| Testing | Terminal output / GIF | Architecture diagrams |
+| DevOps | Architecture diagram / GIF | UI screenshots |
+| Library | Code examples (text is fine) | GIF, screenshots (nice-to-have, not required) |
+
+If the target repo has the **primary visual** for its category, don't flag missing secondary visuals as high-priority gaps.
+
+### Step 6: Identify Gaps
 
 Rank gaps by impact. A missing pattern that 80% of top repos have is more impactful than one that 30% have. Weight by the scoring category it affects.
 
@@ -86,7 +104,9 @@ Gap priority formula:
 Gap_Priority = pattern_frequency * category_weight * (benchmark_avg - target_score)
 ```
 
-### Step 6: Generate Recommendations
+Skip patterns that are subsumed (GIF covers screenshot) or low-priority for the category.
+
+### Step 7: Generate Recommendations
 
 For each gap, provide:
 1. What's missing

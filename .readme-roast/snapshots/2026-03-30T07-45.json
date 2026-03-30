@@ -1,0 +1,78 @@
+{
+  "id": "2026-03-30T07-45",
+  "date": "2026-03-30",
+  "readme_hash": "ee658d7",
+  "stars": 1,
+  "category": "cli-tools",
+  "scores": {
+    "hero": 82,
+    "visuals": 62,
+    "install": 72,
+    "trust": 60,
+    "structure": 87,
+    "differentiation": 65,
+    "overall": 72
+  },
+  "rating": "Good",
+  "patterns": {
+    "has_gif": true,
+    "has_screenshot": false,
+    "has_demo_link": false,
+    "has_comparison_table": false,
+    "has_comparison_section": false,
+    "install_steps": 4,
+    "has_used_by": false,
+    "hero_words": 14,
+    "total_lines": 195,
+    "has_toc": true,
+    "badges_count": 4,
+    "has_quickstart_output": true,
+    "code_blocks": 7,
+    "has_contributing": true,
+    "has_license_badge": true,
+    "has_community_link": false
+  },
+  "star_killers": [
+    {
+      "category": "Visual Proof",
+      "gap": 23,
+      "score": 62,
+      "benchmark_avg": 85,
+      "fix": "Add 1-2 static screenshots of audit output"
+    },
+    {
+      "category": "Trust Signals",
+      "gap": 21,
+      "score": 60,
+      "benchmark_avg": 81,
+      "fix": "Add community link, CI badge, external social proof"
+    },
+    {
+      "category": "Install & Quickstart",
+      "gap": 14,
+      "score": 72,
+      "benchmark_avg": 86,
+      "fix": "Add Claude Code install link, cost note, system reqs"
+    }
+  ],
+  "action_items": [
+    "Fix '90' vs '116' inconsistency in tagline",
+    "Add 1-2 static screenshots of audit output",
+    "Enable GitHub Discussions + add badge",
+    "Add CI badge (GitHub Actions)",
+    "Verify assets/demo.gif renders on GitHub",
+    "Add 'Why README Roast?' comparison section",
+    "Smooth Claude Code prerequisite (install link, free tier)",
+    "Run audits on 5 well-known repos as social proof"
+  ],
+  "previous_audit": "2026-03-30T06-51",
+  "delta": {
+    "overall": 8,
+    "hero": 0,
+    "visuals": 30,
+    "install": 4,
+    "trust": 5,
+    "structure": 2,
+    "differentiation": 3
+  }
+}
